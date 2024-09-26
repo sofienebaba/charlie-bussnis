@@ -1,27 +1,82 @@
-
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f7e8f7, #d2e3f9);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
 .card {
     width: 500px;
-    margin: 0 auto;
     padding: 20px;
     display: flex;
-    justify-content: space-around;
-    border: 1px dotted blue;
-    background: #ddebf8;
-    border-bottom: 5px solid purple;
+    justify-content: space-between;
+    border-radius: 20px;
+    background: #E4ECF9;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid purple;
+}
 
-}
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+
 .charlie-pic {
-    width: 200px;
-    border-radius:40px;
-    border:1px solid black ;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid purple;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
+
 .info {
-    margin: 20px;
-    font-style: italic;
+    margin-left: 20px;
+    text-align: left;
+}
+
+h2 {
+    font-size: 28px;
+    color: #4a47a3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+    h2:hover {
+        color: dimgrey;
+        text-shadow: 2px 2px #000;
+    }
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 20px;
     color: #2b2839;
+    margin-bottom: 20px;
+    font-style: italic;
 }
-h2:hover{
-    background-color:yellow;
-    text-shadow:2px 2px;
+
+.contact {
+    font-size: 16px;
 }
+
+a {
+    color: #4a47a3;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #ff6347;
+        text-decoration: underline;
+    }
